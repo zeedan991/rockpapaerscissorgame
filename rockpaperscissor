@@ -1,0 +1,27 @@
+import java.util.Scanner;
+import java.util.Random;
+
+public class jjava {
+    public static void main(String[] args) {
+        System.out.println("WELCOME TO MY GAME");
+        System.out.println("ENTER 0 FOR ROCK , 1 FOR PAPER , 2 FOR SCISSORS ");
+        int input;
+        Random ra = new Random();
+        int computerinput = ra.nextInt(3);
+        Scanner sc = new Scanner(System.in);
+            input = sc.nextInt(3);
+
+            if(computerinput==input){
+                System.out.println("DRAW <_> PLAY AGAIN");
+            }
+            else if (input==0 && computerinput==2 || input==1 && computerinput==0 || input==2 && computerinput==1 ){
+                System.out.println("YOU WON BBG");
+            }
+            else{
+                System.out.println("SORRY BBG TRY AGAIN YOU LOST");
+
+            }
+            System.out.println("COMPUTER CHOICE WAS " + computerinput);
+    }
+}
+
