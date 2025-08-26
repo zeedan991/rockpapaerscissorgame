@@ -10,7 +10,8 @@ public class jjava {
         Random ra = new Random();
         int computerinput = ra.nextInt(3);
         Scanner sc = new Scanner(System.in);
-            input = sc.nextInt(3);
+        input = sc.nextInt(3);
+        System.out.println("YOU CHOOSE "+input);
 
             if(computerinput==input){
                 System.out.println("DRAW <_> PLAY AGAIN");
